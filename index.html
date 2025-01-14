@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <title>
+    Jonathan Yin
+  </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
   <style>
     html {min-height: 100%}
     body {
@@ -10,24 +18,33 @@
       padding-bottom: 40px;
       background: linear-gradient(180deg, #70b3ff, #5e99e8, #4d7fd1, #3d66ba, #2f4ea3, #20368b, #121f73, #01075b); /* made at https://learnui.design/tools/gradient-generator.html */
       color: rgba(255, 255, 255, 1.0);
-}
+      text-decoration: none;
+      font-family: "Garamond";
+  font-size: 30px;
+  font-weight: 400;
+    }
 
 a {
   color: rgba(255, 255, 255, 1.0);
+  text-decoration: none;
+
     }
     
   </style>
-<meta charset="UTF-8">
+
 <body>
   <div class="main-container">
-    
+    <style>
+      .main-container {
+  max-width: 640px;
+  margin: auto;
+  text-decoration: none;
+}
+    </style>
     <div class="image-row">
       <img class="avatar-image" src="F24 Headshot.jpg" alt="Jonathan Yin's headshot">
       <style>
-        .main-container {
-  max-width: 800px;
-  margin: auto;
-}
+        
         .avatar-image {
   width: 128px;
   height: 128px;
@@ -37,6 +54,7 @@ a {
 .image-row {
   margin-bottom: 30px;
   text-align: center;
+  text-decoration: none;
 }
       </style>
     </div>
@@ -46,21 +64,23 @@ a {
         .name-row {
           margin-bottom: 30px;
           text-align: center;
+          text-decoration: none;
         }
         </style>
     </div>
 
     <div class="social-icons-row">
       <a href="https://github.com/jonathanzyin" target="_blank">
-        GitHub
+        
+        <i class="fa-brands fa-github"></i> 
       </a>
 
       <a href="https://www.linkedin.com/in/jonathanzyin/" target="_blank">
-        LinkedIn
+        <i class="fa-brands fa-linkedin"></i>
       </a>
 
       <a href="https://www.instagram.com/jonathan._.yin/" target="_blank">
-        Instagram
+        <i class="fa-brands fa-instagram"></i>
       </a>
 
     </div>
@@ -73,6 +93,7 @@ a {
   width: 48px;
   height: 48px;
   object-fit: cover;
+  text-decoration: none;
 }
 .item {
   background-color: rgba(7, 40, 94, 0.1);
@@ -83,12 +104,25 @@ a {
 .social-icons-row {
   margin-bottom: 30px;
 }
+.item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 1000px;
+
+}
         </style>
-        <a target="_blank" href="www.prismconsultinggroup.org">
+        <a class ="link-text" target="_blank" href="www.prismconsultinggroup.org">
           My club!
-          
+          <style>
+            .link-text {
+  text-align: center;
+  flex-grow: 1;
+
+}
+          </style>
         </a>
-        
+
       </div>
   </div>
 </body>
