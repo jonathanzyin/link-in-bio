@@ -27,20 +27,61 @@
 a {
   color: rgba(255, 255, 255, 1.0);
   text-decoration: none;
-
     }
-    
+    html {
+      min-height: 100%;
+    }
+
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    a {
+      color: rgba(255, 255, 255, 1.0);
+      text-decoration: none;
+    }
+
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
+    }
   </style>
 
 <body>
   <div class="main-container">
-    <style>
-      .main-container {
-  max-width: 640px;
-  margin: auto;
-  text-decoration: none;
-}
-    </style>
     <div class="image-row">
       <img class="avatar-image" src="F24 Headshot.jpg" alt="Jonathan Yin's headshot">
       <style>
@@ -58,8 +99,9 @@ a {
 }
       </style>
     </div>
-    <class="name-row">
+    <div class="name-row">
       Jonathan Yin
+    </div>
       <style>
         .name-row {
           margin-bottom: 30px;
@@ -85,6 +127,13 @@ a {
 
     </div>
     <div class="links-row">
+      <style>
+        .links-row {
+  max-width: 640px; /* Limit the width */
+  margin: auto; /* Center the container */
+  padding: 10px; /* Add spacing inside the container */
+}
+      </style>
       <div class="item">
         <img class="thumbnail" src="Website Logo Color.png" alt="Prism Consulting Group logo">
         
